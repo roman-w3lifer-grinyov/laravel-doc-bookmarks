@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../../autoload.php';
+
+use w3lifer\laravel\DocBookmarks;
+
+$docBookmarks = new DocBookmarks();
+
+file_put_contents(
+    __DIR__ . '/../../../laravel-doc-bookmarks-as-array.php',
+    '<?php' . "\n\n" .
+        var_export($docBookmarks->getAsArray(), true) . ';'
+);
+
+file_put_contents(
+    __DIR__ . '/../../../laravel-doc-bookmarks-as-netscape-bookmarks.html',
+    $docBookmarks->getAsNetscapeBookmarks()
+);
+
+echo 'Done!' . "\n";

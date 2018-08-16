@@ -1,0 +1,26 @@
+{
+  "name": "w3lifer/laravel-doc-bookmarks",
+  "keywords": [
+    "laravel",
+    "doc",
+    "bookmarks"
+  ],
+  "license": "MIT",
+  "require": {
+    "w3lifer/netscape-bookmarks": "^1.0"
+  },
+  "authors": [
+    {
+      "name": "Roman Grinyov",
+      "email": "w3lifer@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "w3lifer\\laravel\\": ""
+    }
+  },
+  "bin": [
+    "laravel-doc-bookmarks"
+  ]
+}
