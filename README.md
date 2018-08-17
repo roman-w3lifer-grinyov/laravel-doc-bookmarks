@@ -3,6 +3,8 @@
 - [Installation](#installation)
 - [Usage](#usage)
 
+![Example](screenshot.png)
+
 ## Installation
 
 ``` sh
