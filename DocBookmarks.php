@@ -298,7 +298,7 @@ class DocBookmarks
 
         // Compose the serial number
 
-        //  `$i = 2` because of header H2 (##) is a control point
+        // `$i = 2` because of header H2 (##) is a control point
         for ($i = 2; $i <= $serialNumberOfAnchor; $i++) {
             $growingHashSigns = str_repeat('#', $i);
             // For the case when exists leap between headers
