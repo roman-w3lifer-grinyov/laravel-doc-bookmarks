@@ -55,7 +55,6 @@ class DocBookmarks
             self::BASE_LINK_GITHUB_COM . '/' . $this->options['version'];
         $this->baseUrlToLaravelCom =
             self::BASE_LINK_LARAVEL_COM . '/' . $this->options['version'];
-
     }
 
     /**
