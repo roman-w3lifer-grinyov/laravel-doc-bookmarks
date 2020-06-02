@@ -2,6 +2,7 @@
 
 namespace w3lifer\laravel;
 
+use Exception;
 use w3lifer\netscapeBookmarks\NetscapeBookmarks;
 
 /**
