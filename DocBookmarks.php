@@ -152,11 +152,14 @@ class DocBookmarks
         foreach ($tableOfContents as $sectionName => $articles) {
             $this->bookmarks[$sectionName] = [];
             foreach ($articles as $articleName => $articleFilename) {
-                $articleContent =
-                    file_get_contents(
-                        $this->baseUrlToGitHubCom . '/' .
+                try {
+                    $articleContent =
+                        file_get_contents(
+                            $this->baseUrlToGitHubCom . '/' .
                             $articleFilename . '.md'
-                    );
+                        );
+                } catch (Exception $e) {
+                }
                 $this->processAnchors(
                     $sectionName,
                     $articleName,
